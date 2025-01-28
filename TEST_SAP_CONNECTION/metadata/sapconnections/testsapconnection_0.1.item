@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:SAPConnection xmi:id="_fncdUN03Ee-ZcrbUll7IOw" dataPackage="_rwcPcN03Ee-ZcrbUll7IOw" Host="R01VM2QS11" Username="TALENDUSER" Password="enc:system.encryption.key.v1:n1DuJHp86o0Exf65k4hGU9qghmBpLs6Cb+KNMo9m4MQCGqpDCkk3jw==" Client="250" SystemNumber="00" Language="JA" jcoVersion="SAP2">
+    <taggedValue xmi:id="_fncdUd03Ee-ZcrbUll7IOw" tag="adsoConnectionType" value="SAP_JCO"/>
+    <additionalProperties xmi:id="_fncdUt03Ee-ZcrbUll7IOw" propertyName="api.use_z_talend_read_table" Value="true"/>
+  </TalendMetadata:SAPConnection>
+  <TalendMetadata:GenericPackage xmi:id="_rwcPcN03Ee-ZcrbUll7IOw" name="testsapconnection" dataManager="_fncdUN03Ee-ZcrbUll7IOw">
+    <ownedElement xsi:type="TalendMetadata:SAPTable" xmi:id="_rwcPcd03Ee-ZcrbUll7IOw" name="USR02" id="_n5snYN03Ee-ZcrbUll7IOw" label="USR02" tableType="TABLE" tableSearchType="TRANSPARENT">
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPct03Ee-ZcrbUll7IOw" name="MANDT" comment="クライアント" label="MANDT" length="3" sourceType="STRING" talendType="id_String" key="true" businessName="クライアント">
+        <initialValue xmi:id="_rwcPc903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPdN03Ee-ZcrbUll7IOw" name="BNAME" comment="ユーザマスタレコードのユーザ名" label="BNAME" length="12" sourceType="STRING" talendType="id_String" key="true" businessName="ユーザ">
+        <initialValue xmi:id="_rwcPdd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPdt03Ee-ZcrbUll7IOw" name="BCODE" comment="パスワードハッシュキー" label="BCODE" length="16" sourceType="RAW" talendType="id_byte[]" businessName="初期パスワード">
+        <initialValue xmi:id="_rwcPd903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPeN03Ee-ZcrbUll7IOw" name="GLTGV" comment="ユーザ有効開始" label="GLTGV" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="有効開始日付">
+        <initialValue xmi:id="_rwcPed03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPet03Ee-ZcrbUll7IOw" name="GLTGB" comment="ユーザ有効期限" label="GLTGB" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="有効期限">
+        <initialValue xmi:id="_rwcPe903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPfN03Ee-ZcrbUll7IOw" name="USTYP" comment="ユーザタイプ" label="USTYP" length="1" sourceType="STRING" talendType="id_String" businessName="ユーザタイプ">
+        <initialValue xmi:id="_rwcPfd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPft03Ee-ZcrbUll7IOw" name="CLASS" comment="ユーザグループ" label="Column0" length="12" sourceType="STRING" talendType="id_String" businessName="ユーザグループ">
+        <initialValue xmi:id="_rwcPf903Ee-ZcrbUll7IOw"/>
+        <refTable>USGRP</refTable>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPgN03Ee-ZcrbUll7IOw" name="LOCNT" comment="ログオン失敗回数" label="LOCNT" length="3" sourceType="SHORT" talendType="id_Short" businessName="ログオン失敗回数">
+        <initialValue xmi:id="_rwcPgd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPgt03Ee-ZcrbUll7IOw" name="UFLAG" comment="ユーザロックステータス" label="UFLAG" length="3" sourceType="SHORT" talendType="id_Short" businessName="ユーザロックステータス">
+        <initialValue xmi:id="_rwcPg903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPhN03Ee-ZcrbUll7IOw" name="ACCNT" comment="アカウント ID" label="ACCNT" length="12" sourceType="STRING" talendType="id_String" businessName="アカウント ID">
+        <initialValue xmi:id="_rwcPhd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPht03Ee-ZcrbUll7IOw" name="ANAME" comment="ユーザマスタレコードの登録者" label="ANAME" length="12" sourceType="STRING" talendType="id_String" businessName="ユーザマスタレコードの登録者">
+        <initialValue xmi:id="_rwcPh903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPiN03Ee-ZcrbUll7IOw" name="ERDAT" comment="ユーザマスタレコードの登録日付" label="ERDAT" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="ユーザマスタの登録日付">
+        <initialValue xmi:id="_rwcPid03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPit03Ee-ZcrbUll7IOw" name="TRDAT" comment="最終ログオン日付" label="TRDAT" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終ログオン日付">
+        <initialValue xmi:id="_rwcPi903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPjN03Ee-ZcrbUll7IOw" name="LTIME" comment="最終ログオン時刻" label="LTIME" length="6" sourceType="TIME" talendType="id_Date" pattern="&quot;HH:mm:ss&quot;" businessName="最終ログオン時刻">
+        <initialValue xmi:id="_rwcPjd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPjt03Ee-ZcrbUll7IOw" name="OCOD1" comment="パスワードハッシュキー" label="OCOD1" length="16" sourceType="RAW" talendType="id_byte[]" businessName="初期パスワード">
+        <initialValue xmi:id="_rwcPj903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPkN03Ee-ZcrbUll7IOw" name="BCDA1" comment="最終パスワード変更日付" label="BCDA1" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワード変更日付">
+        <initialValue xmi:id="_rwcPkd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPkt03Ee-ZcrbUll7IOw" name="CODV1" comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" label="CODV1" length="1" sourceType="STRING" talendType="id_String" businessName="パスワードコード Ver">
+        <initialValue xmi:id="_rwcPk903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPlN03Ee-ZcrbUll7IOw" name="OCOD2" comment="パスワードハッシュキー" label="OCOD2" length="16" sourceType="RAW" talendType="id_byte[]" businessName="初期パスワード">
+        <initialValue xmi:id="_rwcPld03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPlt03Ee-ZcrbUll7IOw" name="BCDA2" comment="最終パスワード変更日付" label="BCDA2" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワード変更日付">
+        <initialValue xmi:id="_rwcPl903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPmN03Ee-ZcrbUll7IOw" name="CODV2" comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" label="CODV2" length="1" sourceType="STRING" talendType="id_String" businessName="パスワードコード Ver">
+        <initialValue xmi:id="_rwcPmd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPmt03Ee-ZcrbUll7IOw" name="OCOD3" comment="パスワードハッシュキー" label="OCOD3" length="16" sourceType="RAW" talendType="id_byte[]" businessName="初期パスワード">
+        <initialValue xmi:id="_rwcPm903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPnN03Ee-ZcrbUll7IOw" name="BCDA3" comment="最終パスワード変更日付" label="BCDA3" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワード変更日付">
+        <initialValue xmi:id="_rwcPnd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPnt03Ee-ZcrbUll7IOw" name="CODV3" comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" label="CODV3" length="1" sourceType="STRING" talendType="id_String" businessName="パスワードコード Ver">
+        <initialValue xmi:id="_rwcPn903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPoN03Ee-ZcrbUll7IOw" name="OCOD4" comment="パスワードハッシュキー" label="OCOD4" length="16" sourceType="RAW" talendType="id_byte[]" businessName="初期パスワード">
+        <initialValue xmi:id="_rwcPod03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPot03Ee-ZcrbUll7IOw" name="BCDA4" comment="最終パスワード変更日付" label="BCDA4" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワード変更日付">
+        <initialValue xmi:id="_rwcPo903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPpN03Ee-ZcrbUll7IOw" name="CODV4" comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" label="CODV4" length="1" sourceType="STRING" talendType="id_String" businessName="パスワードコード Ver">
+        <initialValue xmi:id="_rwcPpd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPpt03Ee-ZcrbUll7IOw" name="OCOD5" comment="パスワードハッシュキー" label="OCOD5" length="16" sourceType="RAW" talendType="id_byte[]" businessName="初期パスワード">
+        <initialValue xmi:id="_rwcPp903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPqN03Ee-ZcrbUll7IOw" name="BCDA5" comment="最終パスワード変更日付" label="BCDA5" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワード変更日付">
+        <initialValue xmi:id="_rwcPqd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPqt03Ee-ZcrbUll7IOw" name="CODV5" comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" label="CODV5" length="1" sourceType="STRING" talendType="id_String" businessName="パスワードコード Ver">
+        <initialValue xmi:id="_rwcPq903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPrN03Ee-ZcrbUll7IOw" name="VERSN" comment="ユーザマスタレコードバージョン" label="VERSN" length="3" sourceType="STRING" talendType="id_String" businessName="">
+        <initialValue xmi:id="_rwcPrd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPrt03Ee-ZcrbUll7IOw" name="CODVN" comment="パスワードハッシュアルゴリズムのコードバージョン(新システム)" label="CODVN" length="1" sourceType="STRING" talendType="id_String" businessName="パスワードコード Ver">
+        <initialValue xmi:id="_rwcPr903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPsN03Ee-ZcrbUll7IOw" name="TZONE" comment="タイムゾーン" label="TZONE" length="6" sourceType="STRING" talendType="id_String" businessName="タイムゾーン">
+        <initialValue xmi:id="_rwcPsd03Ee-ZcrbUll7IOw"/>
+        <refTable>TTZZ</refTable>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPst03Ee-ZcrbUll7IOw" name="ZBVMASTER" comment="CUA ユーザテンプレート: ログインできません" label="ZBVMASTER" length="1" sourceType="STRING" talendType="id_String" businessName="CUA ユーザ Template">
+        <initialValue xmi:id="_rwcPs903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPtN03Ee-ZcrbUll7IOw" name="PASSCODE" comment="パスワードハッシュ値 (SHA1、160 ビット)" label="PASSCODE" length="40" sourceType="RAW" talendType="id_byte[]" businessName="Pswdハッシュ値 (SHA1、160 ビット)">
+        <initialValue xmi:id="_rwcPtd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPtt03Ee-ZcrbUll7IOw" name="PWDCHGDATE" comment="最終パスワード変更日付" label="PWDCHGDATE" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワード変更日付">
+        <initialValue xmi:id="_rwcPt903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPuN03Ee-ZcrbUll7IOw" name="PWDSTATE" comment="パスワード変更: 必須/可能/不可" label="PWDSTATE" length="3" sourceType="SHORT" talendType="id_Short" businessName="パスワード変更ステータス">
+        <initialValue xmi:id="_rwcPud03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPut03Ee-ZcrbUll7IOw" name="RESERVED" comment="CUA 管理情報" label="RESERVED" length="3" sourceType="SHORT" talendType="id_Short" businessName="CUA 管理情報">
+        <initialValue xmi:id="_rwcPu903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPvN03Ee-ZcrbUll7IOw" name="PWDHISTORY" comment="区分: テーブル USRPWDHISTORY に格納されたパスワード履歴" label="PWDHISTORY" length="3" sourceType="SHORT" talendType="id_Short" businessName="外部パスワード履歴 (USRPWDHISTORY)">
+        <initialValue xmi:id="_rwcPvd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPvt03Ee-ZcrbUll7IOw" name="PWDLGNDATE" comment="最終パスワードログオンの日付" label="PWDLGNDATE" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="最終パスワードログオンの日付">
+        <initialValue xmi:id="_rwcPv903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPwN03Ee-ZcrbUll7IOw" name="PWDSETDATE" comment="日付: 管理者によってリセットされたパスワード" label="PWDSETDATE" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="日付: 管理者がリセットしたパスワード">
+        <initialValue xmi:id="_rwcPwd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPwt03Ee-ZcrbUll7IOw" name="PWDINITIAL" comment="区分: パスワードが初期値 (= 管理者設定)" label="PWDINITIAL" length="3" sourceType="SHORT" talendType="id_Short" businessName="区分: パスワードが初期値">
+        <initialValue xmi:id="_rwcPw903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPxN03Ee-ZcrbUll7IOw" name="PWDLOCKDATE" comment="日付: パスワードロックの設定" label="PWDLOCKDATE" length="8" sourceType="DATE" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;" businessName="日付: パスワードロック">
+        <initialValue xmi:id="_rwcPxd03Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPxt03Ee-ZcrbUll7IOw" name="PWDSALTEDHASH" comment="パスワードハッシュ値 (さまざまなアルゴリズムとコーディング)" label="PWDSALTEDHASH" length="255" sourceType="STRING" talendType="id_String" businessName="パスワードハッシュ値">
+        <initialValue xmi:id="_rwcPx903Ee-ZcrbUll7IOw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_rwcPyN03Ee-ZcrbUll7IOw" name="SECURITY_POLICY" comment="セキュリティポリシー名" label="SECURITY_POLICY" length="40" sourceType="STRING" talendType="id_String" businessName="セキュリティポリシー">
+        <initialValue xmi:id="_rwcPyd03Ee-ZcrbUll7IOw"/>
+        <refTable>SEC_POLICY_CUST</refTable>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
