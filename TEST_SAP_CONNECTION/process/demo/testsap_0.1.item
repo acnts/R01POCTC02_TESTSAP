@@ -101,16 +101,6 @@
   </parameters>
   <node componentName="tSAPTableInput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPTableInput_1" show="false"/>
-    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tSAPTableInput" show="false"/>
-    <elementParameter field="TEXT" name="VERSION" value="0.101 (ALPHA)" show="false"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Business/SAP" show="false"/>
-    <elementParameter field="CHECK" name="START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
-    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
-    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tSAPTableInput" show="false"/>
-    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
-    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\Talend-Studio-20240527_1700-V8.0.1\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_fnYL4N03Ee-ZcrbUll7IOw" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -222,113 +212,37 @@
       <column comment="セキュリティポリシー名" key="false" length="40" name="SECURITY_POLICY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="400" posY="80">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MANDT" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BNAME" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BCODE" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLTGV" id="6"/>
-      <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLTGB" id="8"/>
-      <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USTYP" id="10"/>
-      <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Column0" id="12"/>
-      <elementValue elementRef="LENGTH" value="10" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOCNT" id="14"/>
-      <elementValue elementRef="LENGTH" value="10" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UFLAG" id="16"/>
-      <elementValue elementRef="LENGTH" value="10" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACCNT" id="18"/>
-      <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ANAME" id="20"/>
-      <elementValue elementRef="LENGTH" value="10" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ERDAT" id="22"/>
-      <elementValue elementRef="LENGTH" value="10" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRDAT" id="24"/>
-      <elementValue elementRef="LENGTH" value="10" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LTIME" id="26"/>
-      <elementValue elementRef="LENGTH" value="10" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OCOD1" id="28"/>
-      <elementValue elementRef="LENGTH" value="10" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BCDA1" id="30"/>
-      <elementValue elementRef="LENGTH" value="10" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODV1" id="32"/>
-      <elementValue elementRef="LENGTH" value="10" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OCOD2" id="34"/>
-      <elementValue elementRef="LENGTH" value="10" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BCDA2" id="36"/>
-      <elementValue elementRef="LENGTH" value="10" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODV2" id="38"/>
-      <elementValue elementRef="LENGTH" value="10" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OCOD3" id="40"/>
-      <elementValue elementRef="LENGTH" value="10" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BCDA3" id="42"/>
-      <elementValue elementRef="LENGTH" value="10" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODV3" id="44"/>
-      <elementValue elementRef="LENGTH" value="10" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OCOD4" id="46"/>
-      <elementValue elementRef="LENGTH" value="10" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BCDA4" id="48"/>
-      <elementValue elementRef="LENGTH" value="10" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODV4" id="50"/>
-      <elementValue elementRef="LENGTH" value="10" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OCOD5" id="52"/>
-      <elementValue elementRef="LENGTH" value="10" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BCDA5" id="54"/>
-      <elementValue elementRef="LENGTH" value="10" id="55"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODV5" id="56"/>
-      <elementValue elementRef="LENGTH" value="10" id="57"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VERSN" id="58"/>
-      <elementValue elementRef="LENGTH" value="10" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CODVN" id="60"/>
-      <elementValue elementRef="LENGTH" value="10" id="61"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TZONE" id="62"/>
-      <elementValue elementRef="LENGTH" value="10" id="63"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ZBVMASTER" id="64"/>
-      <elementValue elementRef="LENGTH" value="10" id="65"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PASSCODE" id="66"/>
-      <elementValue elementRef="LENGTH" value="10" id="67"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDCHGDATE" id="68"/>
-      <elementValue elementRef="LENGTH" value="10" id="69"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDSTATE" id="70"/>
-      <elementValue elementRef="LENGTH" value="10" id="71"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RESERVED" id="72"/>
-      <elementValue elementRef="LENGTH" value="10" id="73"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDHISTORY" id="74"/>
-      <elementValue elementRef="LENGTH" value="10" id="75"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDLGNDATE" id="76"/>
-      <elementValue elementRef="LENGTH" value="10" id="77"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDSETDATE" id="78"/>
-      <elementValue elementRef="LENGTH" value="10" id="79"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDINITIAL" id="80"/>
-      <elementValue elementRef="LENGTH" value="10" id="81"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDLOCKDATE" id="82"/>
-      <elementValue elementRef="LENGTH" value="10" id="83"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PWDSALTEDHASH" id="84"/>
-      <elementValue elementRef="LENGTH" value="10" id="85"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SECURITY_POLICY" id="86"/>
-      <elementValue elementRef="LENGTH" value="10" id="87"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/R01POCTC02ADMIN/Documents/out_1707.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="USR02" name="tLogRow_1">
+    <metadata connector="FLOW" label="USR02" name="tFileOutputDelimited_1">
       <column comment="クライアント" key="true" length="3" name="MANDT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="ユーザマスタレコードのユーザ名" key="true" length="12" name="BNAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
       <column comment="パスワードハッシュキー" key="false" length="16" name="BCODE" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
@@ -375,12 +289,68 @@
       <column comment="セキュリティポリシー名" key="false" length="40" name="SECURITY_POLICY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tSAPTableInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_1" target="tLogRow_1">
+  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="80" sizeX="41" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
+    <elementParameter field="TEXT" name="PAUSE" value="300"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="USR02" name="tSleep_1">
+      <column comment="クライアント" key="true" length="3" name="MANDT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ユーザマスタレコードのユーザ名" key="true" length="12" name="BNAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュキー" key="false" length="16" name="BCODE" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="ユーザ有効開始" key="false" length="8" name="GLTGV" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="ユーザ有効期限" key="false" length="8" name="GLTGB" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="ユーザタイプ" key="false" length="1" name="USTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ユーザグループ" key="false" length="12" name="Column0" nullable="true" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ログオン失敗回数" key="false" length="3" name="LOCNT" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="ユーザロックステータス" key="false" length="3" name="UFLAG" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="アカウント ID" key="false" length="12" name="ACCNT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ユーザマスタレコードの登録者" key="false" length="12" name="ANAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ユーザマスタレコードの登録日付" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="最終ログオン日付" key="false" length="8" name="TRDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="最終ログオン時刻" key="false" length="6" name="LTIME" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD1" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA1" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD2" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA2" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD3" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA3" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD4" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA4" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD5" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA5" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="ユーザマスタレコードバージョン" key="false" length="3" name="VERSN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュアルゴリズムのコードバージョン(新システム)" key="false" length="1" name="CODVN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="タイムゾーン" key="false" length="6" name="TZONE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="CUA ユーザテンプレート: ログインできません" key="false" length="1" name="ZBVMASTER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="パスワードハッシュ値 (SHA1、160 ビット)" key="false" length="40" name="PASSCODE" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
+      <column comment="最終パスワード変更日付" key="false" length="8" name="PWDCHGDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワード変更: 必須/可能/不可" key="false" length="3" name="PWDSTATE" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="CUA 管理情報" key="false" length="3" name="RESERVED" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="区分: テーブル USRPWDHISTORY に格納されたパスワード履歴" key="false" length="3" name="PWDHISTORY" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="最終パスワードログオンの日付" key="false" length="8" name="PWDLGNDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="日付: 管理者によってリセットされたパスワード" key="false" length="8" name="PWDSETDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="区分: パスワードが初期値 (= 管理者設定)" key="false" length="3" name="PWDINITIAL" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
+      <column comment="日付: パスワードロックの設定" key="false" length="8" name="PWDLOCKDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="パスワードハッシュ値 (さまざまなアルゴリズムとコーディング)" key="false" length="255" name="PWDSALTEDHASH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+      <column comment="セキュリティポリシー名" key="false" length="40" name="SECURITY_POLICY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSAPTableInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPTableInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
