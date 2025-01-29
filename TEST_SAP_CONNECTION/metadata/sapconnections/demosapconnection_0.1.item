@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:SAPConnection xmi:id="_EdK8wd3ZEe-VafISc9suqA" dataPackage="_VG358N3ZEe-VafISc9suqA" Host="R01VM2QS11" Username="TALENDUSER" Password="enc:system.encryption.key.v1:ElgjAD8TDZH98FlHGj7wpCXoQbe5uvsYukURM+D9AysvZzeSmaK/Og==" Client="250" SystemNumber="00" Language="JA" jcoVersion="SAP2">
+    <taggedValue xmi:id="_EdK8wt3ZEe-VafISc9suqA" tag="adsoConnectionType" value="SAP_JCO"/>
+    <additionalProperties xmi:id="_EdK8w93ZEe-VafISc9suqA" propertyName="api.use_z_talend_read_table" Value="true"/>
+  </TalendMetadata:SAPConnection>
+  <TalendMetadata:GenericPackage xmi:id="_VG358N3ZEe-VafISc9suqA" name="demosapconnection" dataManager="_EdK8wd3ZEe-VafISc9suqA">
+    <ownedElement xsi:type="TalendMetadata:SAPTable" xmi:id="_VG358d3ZEe-VafISc9suqA" name="AGR_1251" id="_OqVUUN3ZEe-VafISc9suqA" label="AGR_1251" tableType="TABLE" tableSearchType="TRANSPARENT">
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG358t3ZEe-VafISc9suqA" name="MANDT" comment="クライアント ID" label="MANDT" length="3" sourceType="STRING" talendType="id_String" key="true" businessName="クライアント ID">
+        <initialValue xmi:id="_VG35893ZEe-VafISc9suqA"/>
+        <refTable>T000</refTable>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG359N3ZEe-VafISc9suqA" name="AGR_NAME" comment="ロール名" label="AGR_NAME" length="30" sourceType="STRING" talendType="id_String" key="true" businessName="ロール">
+        <initialValue xmi:id="_VG359d3ZEe-VafISc9suqA"/>
+        <refTable>AGR_DEFINE</refTable>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG359t3ZEe-VafISc9suqA" name="COUNTER" comment="BIW 用メニュー ID" label="COUNTER" length="6" sourceType="INTEGER" talendType="id_Integer" key="true" businessName="ID">
+        <initialValue xmi:id="_VG35993ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG35-N3ZEe-VafISc9suqA" name="OBJECT" comment="ユーザマスタ更新での権限オブジェクト" label="OBJECT" length="10" sourceType="STRING" talendType="id_String" businessName="権限オブジェクト">
+        <initialValue xmi:id="_VG35-d3ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG35-t3ZEe-VafISc9suqA" name="AUTH" comment="活動グループの権限名" label="AUTH" length="12" sourceType="STRING" talendType="id_String" businessName="権限">
+        <initialValue xmi:id="_VG35-93ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG35_N3ZEe-VafISc9suqA" name="VARIANT" comment="プロファイルジェネレータのバリアント" label="VARIANT" length="4" sourceType="STRING" talendType="id_String" businessName="バリアント">
+        <initialValue xmi:id="_VG35_d3ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG35_t3ZEe-VafISc9suqA" name="FIELD" comment="権限の項目名" label="FIELD" length="10" sourceType="STRING" talendType="id_String" businessName="項目名">
+        <initialValue xmi:id="_VG35_93ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36AN3ZEe-VafISc9suqA" name="LOW" comment="権限値" label="LOW" length="40" sourceType="STRING" talendType="id_String" businessName="値">
+        <initialValue xmi:id="_VG36Ad3ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36At3ZEe-VafISc9suqA" name="HIGH" comment="権限値" label="HIGH" length="40" sourceType="STRING" talendType="id_String" businessName="値">
+        <initialValue xmi:id="_VG36A93ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36BN3ZEe-VafISc9suqA" name="MODIFIED" comment="オブジェクトステータス" label="MODIFIED" length="1" sourceType="STRING" talendType="id_String" businessName="">
+        <initialValue xmi:id="_VG36Bd3ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36Bt3ZEe-VafISc9suqA" name="DELETED" comment="オブジェクトが削除されるかどうかを示す ID" label="DELETED" length="1" sourceType="STRING" talendType="id_String" businessName="">
+        <initialValue xmi:id="_VG36B93ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36CN3ZEe-VafISc9suqA" name="COPIED" comment="オブジェクトがコピーされるかどうかを示す ID" label="COPIED" length="1" sourceType="STRING" talendType="id_String" businessName="">
+        <initialValue xmi:id="_VG36Cd3ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36Ct3ZEe-VafISc9suqA" name="NEU" comment="オブジェクトが新規かどうかを示す ID" label="NEU" length="1" sourceType="STRING" talendType="id_String" businessName="">
+        <initialValue xmi:id="_VG36C93ZEe-VafISc9suqA"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:SAPTableField" xmi:id="_VG36DN3ZEe-VafISc9suqA" name="NODE" comment="内部: ノード ID" label="NODE" length="6" sourceType="INTEGER" talendType="id_Integer" businessName="ID">
+        <initialValue xmi:id="_VG36Dd3ZEe-VafISc9suqA"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

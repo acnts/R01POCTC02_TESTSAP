@@ -289,68 +289,12 @@
       <column comment="セキュリティポリシー名" key="false" length="40" name="SECURITY_POLICY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSleep" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="80" sizeX="41" sizeY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
-    <elementParameter field="TEXT" name="PAUSE" value="300"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="USR02" name="tSleep_1">
-      <column comment="クライアント" key="true" length="3" name="MANDT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ユーザマスタレコードのユーザ名" key="true" length="12" name="BNAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュキー" key="false" length="16" name="BCODE" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="ユーザ有効開始" key="false" length="8" name="GLTGV" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="ユーザ有効期限" key="false" length="8" name="GLTGB" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="ユーザタイプ" key="false" length="1" name="USTYP" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ユーザグループ" key="false" length="12" name="Column0" nullable="true" originalDbColumnName="CLASS" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ログオン失敗回数" key="false" length="3" name="LOCNT" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
-      <column comment="ユーザロックステータス" key="false" length="3" name="UFLAG" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
-      <column comment="アカウント ID" key="false" length="12" name="ACCNT" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ユーザマスタレコードの登録者" key="false" length="12" name="ANAME" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ユーザマスタレコードの登録日付" key="false" length="8" name="ERDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="最終ログオン日付" key="false" length="8" name="TRDAT" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="最終ログオン時刻" key="false" length="6" name="LTIME" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD1" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA1" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV1" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD2" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA2" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV2" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD3" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA3" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV3" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD4" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA4" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV4" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュキー" key="false" length="16" name="OCOD5" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="最終パスワード変更日付" key="false" length="8" name="BCDA5" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュアルゴリズムのコードバージョン(旧システム)" key="false" length="1" name="CODV5" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="ユーザマスタレコードバージョン" key="false" length="3" name="VERSN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュアルゴリズムのコードバージョン(新システム)" key="false" length="1" name="CODVN" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="タイムゾーン" key="false" length="6" name="TZONE" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="CUA ユーザテンプレート: ログインできません" key="false" length="1" name="ZBVMASTER" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="パスワードハッシュ値 (SHA1、160 ビット)" key="false" length="40" name="PASSCODE" nullable="true" pattern="" precision="0" sourceType="RAW" type="id_byte[]" usefulColumn="true"/>
-      <column comment="最終パスワード変更日付" key="false" length="8" name="PWDCHGDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワード変更: 必須/可能/不可" key="false" length="3" name="PWDSTATE" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
-      <column comment="CUA 管理情報" key="false" length="3" name="RESERVED" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
-      <column comment="区分: テーブル USRPWDHISTORY に格納されたパスワード履歴" key="false" length="3" name="PWDHISTORY" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
-      <column comment="最終パスワードログオンの日付" key="false" length="8" name="PWDLGNDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="日付: 管理者によってリセットされたパスワード" key="false" length="8" name="PWDSETDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="区分: パスワードが初期値 (= 管理者設定)" key="false" length="3" name="PWDINITIAL" nullable="true" pattern="" precision="0" sourceType="SHORT" type="id_Short" usefulColumn="true"/>
-      <column comment="日付: パスワードロックの設定" key="false" length="8" name="PWDLOCKDATE" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
-      <column comment="パスワードハッシュ値 (さまざまなアルゴリズムとコーディング)" key="false" length="255" name="PWDSALTEDHASH" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-      <column comment="セキュリティポリシー名" key="false" length="40" name="SECURITY_POLICY" nullable="true" pattern="" precision="0" sourceType="STRING" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSAPTableInput_1" offsetLabelX="0" offsetLabelY="0" source="tSAPTableInput_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSAPTableInput_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSleep_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
